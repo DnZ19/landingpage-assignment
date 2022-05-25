@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
+
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*font-family: 'Merriweather', serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+:root {
+    --main-bg-color: #F3F6F9; /*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+    --main-txt-color: #0C0C0C; /*Zwart #0C0C0C (voor standaard tekst);*/
+    --main-color-purple: #5722CD;
+    --main-color-blue: #4845E4;
+    --main-color-txt-accent: #F2F0FF; /*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+    --main-service-tile-txt: #7A7A7A;  /*Grijs #7A7A7A (voor de service-tegel tekst)*/
+}
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /*border: 1px solid black;*/
+}
+
+.inner-container {
+    flex-basis: 425px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*border: 1px dotted blue;*/
+    text-align: center;
+
+}
+
+
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+.outer-container  {
+    background-color: var(--main-bg-color);
+}
+
+.inner-container    {
+    background-color: var(--main-color-blue);
+    color: var(--main-bg-color);
+}
+
+.nav-container  {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nav-container  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.nav-container ul a {
+    text-decoration: none;
+    color: var(--main-bg-color)
+}
+
+button  {
+    background-color: var(--main-service-tile-txt);
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 100px;
+    padding: 16px 30px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header-content h1   {
+    padding: 20px;
+}
+
+.header-text    {
+    margin-bottom: 16px;
+}
+
+/* --------------- 4.2 Introduction ------------------- */
+
+.intro-container    {
+    background-color: var(--main-bg-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.intro-container h1 {
+    color: var(--main-color-purple);
+    padding: 16px
+}
+
+.intro-container p  {
+    color: var(--main-txt-color);
+    margin-top: 30px;
+
+}
+
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
