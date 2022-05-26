@@ -322,7 +322,13 @@ button  {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.tile-container, h1, p {
+.tile-container h1 {
+    text-align: left;
+    color: var(--main-txt-color);
+    padding: 16px;
+}
+
+.tile-container p {
     text-align: left;
     color: var(--main-txt-color);
     padding: 16px;
@@ -330,7 +336,7 @@ button  {
 
 .image-wrapper-tiles-icons  {
     width: 100px;
-    padding-left: 16px;
+    padding: 16px;
 }
 
 .tile-container h1 {
