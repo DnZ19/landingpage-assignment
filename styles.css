@@ -167,6 +167,7 @@ button  {
 
 }
 
+/*Rolling stone.....*/
 .inner-rolling-stone-container  {
     background-color: var(--main-bg-color);
     display: flex;
@@ -183,7 +184,7 @@ button  {
     margin-bottom: 16px;
 }
 
-.project-text-img  {
+.rolling-stone-text-img  {
     color: var(--main-txt-color);
     text-align: left;
     margin-left: 20px;
@@ -191,15 +192,84 @@ button  {
 
 /*spacing text and icon squiggle line*/
 
-.project-text-img h1, #rolling-stone-icon, p    {
+.rolling-stone-text-img h1, #rolling-stone-icon, p    {
     margin-bottom: 30px;
 }
 
-.project-text-img a {
+.rolling-stone-text-img a {
     text-decoration: none;
     font-weight: bold;
 }
 
+/*Variety......*/
+
+.inner-variety-container  {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/*img variety */
+#variety  {
+    width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.variety-text-img  {
+    color: var(--main-txt-color);
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*spacing text and icon squiggle line*/
+
+.variety-text-img h1, #variety-icon, p    {
+    margin-bottom: 30px;
+}
+
+.variety-text-img a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/*Worth.........*/
+
+.inner-worth-container  {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/*img worth */
+#worth  {
+    width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.worth-text-img  {
+    color: var(--main-txt-color);
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*spacing text and icon squiggle line*/
+
+.worth-text-img h1, #worth-icon, p    {
+    margin-bottom: 30px;
+}
+
+.worth-text-img a {
+    text-decoration: none;
+    font-weight: bold;
+}
 
 
 
