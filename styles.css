@@ -27,7 +27,7 @@ h1, h2 {
     font-family: 'Merriweather', serif;
 }
 
-p {
+p, button, a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -70,6 +70,12 @@ p {
     text-align: center;
 
 }
+
+/*.image-wrapper  {*/
+/*    flex-basis: 800px;*/
+/*    flex-grow: 0;*/
+/*    flex-shrink: 1;*/
+/*}*/
 
 
 /* --------------- 3.2 Other --------------------------- */
@@ -139,7 +145,6 @@ button  {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
-    /*margin-bottom: 50px;*/
 }
 
 .intro-container h1 {
@@ -184,6 +189,8 @@ button  {
     margin-bottom: 16px;
 }
 
+
+
 .rolling-stone-text-img  {
     color: var(--main-txt-color);
     text-align: left;
@@ -199,6 +206,7 @@ button  {
 .rolling-stone-text-img a {
     text-decoration: none;
     font-weight: bold;
+    color: var(--main-color-blue);
 }
 
 /*Variety......*/
@@ -234,6 +242,7 @@ button  {
 .variety-text-img a {
     text-decoration: none;
     font-weight: bold;
+    color: var(--main-color-blue);
 }
 
 /*Worth.........*/
@@ -266,15 +275,73 @@ button  {
     margin-bottom: 30px;
 }
 
+
 .worth-text-img a {
     text-decoration: none;
     font-weight: bold;
+    color: var(--main-color-blue);
+}
+
+.worth-text-img, a {
+    margin-bottom: 100px;
 }
 
 
 
 
 /* --------------- 4.4 Services / tiles ------------------- */
+
+.service-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 425px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 100px 20px 0 20px;
+
+}
+
+.inner-service-container    {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    border: 1px dotted black;
+}
+
+.tile-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    border: 1px solid var(--main-color-blue);
+    margin: 20px 40px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.tile-container, h1, p {
+    text-align: left;
+    color: var(--main-txt-color);
+    padding: 16px;
+}
+
+.image-wrapper-tiles-icons  {
+    width: 100px;
+    padding-left: 16px;
+}
+
+.tile-container h1 {
+    color: var(--main-color-blue);
+    font-weight: bold;
+}
+
+.tile-container p  {
+    color: var(--main-service-tile-txt);
+    font-weight: lighter;
+}
 
 
 
