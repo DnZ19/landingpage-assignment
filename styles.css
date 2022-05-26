@@ -79,11 +79,13 @@ p {
 /* --------------- 4.1 Header ------------------------- */
 
 .outer-container  {
-    background-color: var(--main-bg-color);
+    background-color: white;
 }
 
 .inner-container    {
     background-color: var(--main-color-blue);
+    /*background: rgb(2,0,36);*/
+    /*background: linear-gradient(90deg, rgba(2,0,36,1) 80%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);*/
     color: var(--main-bg-color);
 }
 
@@ -102,11 +104,16 @@ p {
 
 .nav-container ul a {
     text-decoration: none;
-    color: var(--main-bg-color)
+    color: var(--main-bg-color);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 button  {
-    background-color: var(--main-service-tile-txt);
+    background-color: #ef4183;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    font-size: 16px;
     border-radius: 10px;
     margin-top: 16px;
     margin-bottom: 100px;
@@ -126,13 +133,13 @@ button  {
 /* --------------- 4.2 Introduction ------------------- */
 
 .intro-container    {
-    background-color: var(--main-bg-color);
+    background-color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 50px;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 .intro-container h1 {
@@ -145,6 +152,63 @@ button  {
     margin-top: 30px;
 
 }
+
+/* --------------- 4.3 Case Studies / projecten ------------------- */
+
+.project-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 425px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+
+}
+
+.inner-rolling-stone-container  {
+    background-color: var(--main-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+/*img rolling stone*/
+#rolling-stone  {
+    width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 50px;
+    margin-bottom: 16px;
+}
+
+.project-text-img  {
+    color: var(--main-txt-color);
+    text-align: left;
+    margin-left: 20px;
+}
+
+/*spacing text and icon squiggle line*/
+
+.project-text-img h1, #rolling-stone-icon, p    {
+    margin-bottom: 30px;
+}
+
+.project-text-img a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+/* --------------- 4.4 Services / tiles ------------------- */
+
+
+
+/* --------------- 4.5 Footer / contact from ------------------- */
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
