@@ -115,7 +115,7 @@ p, button, a {
     font-size: 20px;
 }
 
-button  {
+#intro-button  {
     background-color: #ef4183;
     color: var(--main-bg-color);
     font-weight: bold;
@@ -298,7 +298,7 @@ button  {
     flex-basis: 425px;
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 100px 20px 0 20px;
+    margin: 100px 20px 20px 20px;
 
 }
 
@@ -308,7 +308,7 @@ button  {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
 }
 
 .tile-container {
@@ -352,6 +352,65 @@ button  {
 
 
 /* --------------- 4.5 Footer / contact from ------------------- */
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 420px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+}
+
+.footer-content h1  {
+    text-align: center;
+}
+
+.footer-content p  {
+    text-align: center;
+}
+
+.footer-form    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+
+}
+
+#form-submit-button  {
+    background-color: #ef4183;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 16px;
+    margin-bottom: 100px;
+    padding: 16px 0;
+    width: 150px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.footer-form .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
