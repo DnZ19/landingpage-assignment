@@ -12,11 +12,15 @@
 
         <div class="inner-container header-content">
 
+<!--            <div class="background-texture-header">-->
+<!--                <img src="assets/noise-texture.png" alt="">-->
+<!--            </div>-->
+
             <nav class="nav-container">
                 <ul>
                     <li class="nav-item"><a href="#nav-project-top">Case Studies</a></li>
                     <li class="nav-item"><a href="#nav-service-top">Services</a></li>
-                    <li class="nav-item"><a href="link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#nav-contact-top">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -26,7 +30,11 @@
 
             <button type="button" id="intro-button">Let's work together</button>
 
-            <img src="assets/squiggle_line_stripe.svg" alt="icon-item">
+            <img src="assets/squiggle_line_stripe.svg" alt="icon-item" id="squiggle-line-item">
+
+            <div id="triangle-left">
+
+            </div>
 
         </div>
 
@@ -95,15 +103,7 @@
                     <a href="link">View project</a>
                 </div>
             </div>
-
-
-
         </div>
-
-
-
-
-
     </article>
 
     <!--    tiles / services-->
@@ -176,7 +176,7 @@
 
     <!--    footer / contact-->
     <article class="outer-container">
-        <div class="inner-container">
+        <div class="inner-container" id="nav-contact-top">
 
             <div class="inner-container footer-content">
 
@@ -186,28 +186,33 @@
                 <form onsubmit="Js" class="footer-form">
 
 
-                    <label for="customer-name">Name</label>
+                    <label for="customer-name" class="label-form">Name</label>
                     <input type="text" id="customer-name" name="customer-name" placeholder="Name">
 
 
-                    <label for="customer-email">Email</label>
+                    <label for="customer-email" class="label-form">Email</label>
                     <input type="text" id="customer-email" name="customer-email" placeholder="Email">
 
-                    <label for="message-box">Message</label>
-                    <textarea name="message" id="message-box" cols="30" rows="10" placeholder="Message"></textarea>
+                    <label for="message-box" class="label-form">Message</label>
+                    <textarea name="message" id="message-box" cols="30" rows="5" placeholder="Message"></textarea>
                     <div class="button">
                         <button type="submit" id="form-submit-button">Send</button>
                     </div>
-
 
 
                 </form>
 
             </div>
 
+            <footer class="footer-footer-container">
+                <p>Business Website Opdracht © NOVI Hogeschool 2022</p>
+            </footer>
+
         </div>
 
     </article>
+
+
 
 
 
