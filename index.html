@@ -16,7 +16,7 @@
                 <ul>
                     <li class="nav-item"><a href="#nav-project-top">Case Studies</a></li>
                     <li class="nav-item"><a href="#nav-service-top">Services</a></li>
-                    <li class="nav-item"><a href="link">Contact Us</a></li>
+                    <li class="nav-item"><a href="#nav-contact-top">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -24,27 +24,35 @@
                 <p>We are here to help you succeed</p>
             </div>
 
-            <button type="button">Let's work together</button>
+            <button type="button" id="intro-button">Let's work together</button>
 
-            <img src="assets/squiggle_line_stripe.svg" alt="icon-item">
+            <img src="assets/squiggle_line_stripe.svg" alt="icon-item" id="squiggle-line-item">
+
+            <div id="triangle-left">
+
+            </div>
 
         </div>
 
     </header>
 
-<!--Introduction-->
-
+    <!--    Introduction    -->
     <article class="outer-container">
         <div class="inner-container intro-container">
             <h1 id="line-one">Rekupe is a digital agency in Los Angeles.</h1>
             <h1 id="line-two">We use strategic UX, SEO optimization and beautiful visual designs to help your business grow.</h1>
             <h1>We see every project as a fresh opportunity, pushing ourselves to create new digital experiences. </h1>
             <p>Have a question? <a href="link">Click here</a> to contact us!</p>
-        </div>
+
+            <div id="triangle-right"></div>
+            <div class="space-for-triangle"></div>
+
+            </div>
+
 
     </article>
 
-<!--    projects-->
+    <!--    projects        -->
     <article class="outer-container">
 
         <div class="project-container" id="nav-project-top">
@@ -81,6 +89,7 @@
                     <p>Variety is an industry leader for breaking entertainment news, reviews and box office results with archive of content dating back to 1905.</p>
                     <a href="link">View project</a>
                 </div>
+
             </div>
 
             <!--    worth-->
@@ -96,14 +105,8 @@
                     <a href="link">View project</a>
                 </div>
             </div>
-
-
-
+            <div class="service-triangle"></div>
         </div>
-
-
-
-
 
     </article>
 
@@ -130,7 +133,45 @@
                     </p>
                 </aside>
 
+                <aside class="tile-container">
+                    <img src="assets/icon_ux.svg" alt="icon-web-design" class="image-wrapper-tiles-icons">
+                    <h1>User Experience</h1>
+                    <p>In order to build successful products you have to understand the user. We create user personas,
+                        wireframes and prototypes to test with users. This allows us to gather feedback which helps to
+                        shape the product and can quickly eliminate potential risks – saving you time and money.
+                    </p>
+                </aside>
 
+                <aside class="tile-container">
+                    <img src="assets/icon_graphic-design.svg" alt="icon-web-design" class="image-wrapper-tiles-icons">
+                    <h1>Logo Design + Branding</h1>
+                    <p>Nike, Apple, Coca-Cola, Starbucks. What do all of these brands have in common? Easily
+                        recognizable logos and brand identity. The best brands stand out from the crowd by having a
+                        clear and unique point of view. We will work with you to understand your vision and help create
+                        a unique brand identity and style guide for your company.
+                    </p>
+                </aside>
+
+                <aside class="tile-container">
+                    <img src="assets/icon_seo.svg" alt="icon-web-design" class="image-wrapper-tiles-icons">
+                    <h1>SEO</h1>
+                    <p>Do you want your site to rank higher in search results? Google is constantly changing their
+                        algorithms for how they rank pages. Don’t worry about constantly playing catch-up. We will make
+                        sure your website it optimized, providing you the best opportunities for organic search
+                        exposure.
+                    </p>
+                </aside>
+
+                <aside class="tile-container">
+                    <img src="assets/icon_copywriting.svg" alt="icon-web-design" class="image-wrapper-tiles-icons">
+                    <h1>Copy Writing</h1>
+                    <p>Brand messaging needs to be clear, direct and easy to understand to be effective. A unique tone
+                        of voice will help you stand out from the crowd and build brand loyalty. We work with you to
+                        establish your brand bible and ensure your messaging is focused and targeted.
+                    </p>
+                </aside>
+
+                <div class="form-triangle"></div>
 
             </div>
 
@@ -141,11 +182,45 @@
 
     <!--    footer / contact-->
     <article class="outer-container">
-        <div class="inner-container">
+        <div class="inner-container" id="nav-contact-top">
+
+            <div class="inner-container footer-content">
+
+
+
+                <h1>Let's Work together</h1>
+                <p>Have a question? Need a quote? Let us know!</p>
+
+                <form onsubmit="Js" class="footer-form">
+
+
+                    <label for="customer-name" class="label-form">Name</label>
+                    <input type="text" id="customer-name" name="customer-name" placeholder="Name">
+
+
+                    <label for="customer-email" class="label-form">Email</label>
+                    <input type="text" id="customer-email" name="customer-email" placeholder="Email">
+
+                    <label for="message-box" class="label-form">Message</label>
+                    <textarea name="message" id="message-box" cols="30" rows="5" placeholder="Message"></textarea>
+                    <div class="button">
+                        <button type="submit" id="form-submit-button">Send</button>
+                    </div>
+
+
+                </form>
+
+            </div>
+
+            <footer class="footer-footer-container">
+                <p>Business Website Opdracht © NOVI Hogeschool 2022</p>
+            </footer>
 
         </div>
 
     </article>
+
+
 
 
 

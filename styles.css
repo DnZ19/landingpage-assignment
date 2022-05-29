@@ -23,11 +23,11 @@
 
 /* ------------------------------- 2. Typography ----------------------------------- */
 
-h1, h2 {
+h1 h2 {
     font-family: 'Merriweather', serif;
 }
 
-p, button, a {
+p button a {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -71,12 +71,6 @@ p, button, a {
 
 }
 
-/*.image-wrapper  {*/
-/*    flex-basis: 800px;*/
-/*    flex-grow: 0;*/
-/*    flex-shrink: 1;*/
-/*}*/
-
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -89,10 +83,17 @@ p, button, a {
 }
 
 .inner-container    {
-    background-color: var(--main-color-blue);
-    /*background: rgb(2,0,36);*/
-    /*background: linear-gradient(90deg, rgba(2,0,36,1) 80%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 100%);*/
+    /*background-color: var(--main-color-blue);*/
     color: var(--main-bg-color);
+}
+
+.header-content  {
+    background-color: hsl(242, 75%, 59%);
+    background-image: url(assets/noise-texture.png);
+
+    outline: white;
+    /*background: rgb(9,80,121);*/
+    /*background: linear-gradient(90deg, rgba(9,80,121,1) 0%, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);*/
 }
 
 .nav-container  {
@@ -115,7 +116,15 @@ p, button, a {
     font-size: 20px;
 }
 
-button  {
+.header-content h1   {
+    padding: 20px;
+}
+
+.header-text    {
+    margin-bottom: 16px;
+}
+
+#intro-button  {
     background-color: #ef4183;
     color: var(--main-bg-color);
     font-weight: bold;
@@ -128,13 +137,20 @@ button  {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-.header-content h1   {
-    padding: 20px;
+#triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 425px solid transparent;
+    border-bottom: 50px solid white;
+    outline: white;
 }
 
-.header-text    {
-    margin-bottom: 16px;
+#squiggle-line-item {
+    margin-bottom: -20%;
 }
+
+
 
 /* --------------- 4.2 Introduction ------------------- */
 
@@ -144,8 +160,23 @@ button  {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 150px;
+    opacity: 0.9;
 }
+
+.intro-container:after  {
+    margin-top: -40px;
+    content: "HELLO";
+    position: absolute;
+    color: #F7F6FF;
+    font-size: 100px;
+    font-weight: bolder;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto', sans-serif;
+    z-index: -1;
+}
+
+
 
 .intro-container h1 {
     color: var(--main-color-purple);
@@ -158,7 +189,29 @@ button  {
 
 }
 
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 425px solid transparent;
+    border-bottom: 50px solid var(--main-bg-color);
+    outline: white;
+}
+
 /* --------------- 4.3 Case Studies / projecten ------------------- */
+
+/*space for triangle element and WORK text after*/
+
+.space-for-triangle {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 70px;
+}
 
 .project-container  {
     display: flex;
@@ -179,6 +232,19 @@ button  {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    opacity: 0.9;
+}
+
+.inner-rolling-stone-container:after  {
+    margin-top: -25px;
+    content: "WORK";
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto', sans-serif;
+    z-index: -1;
 }
 
 /*img rolling stone*/
@@ -188,8 +254,6 @@ button  {
     margin-top: 50px;
     margin-bottom: 16px;
 }
-
-
 
 .rolling-stone-text-img  {
     color: var(--main-txt-color);
@@ -283,11 +347,18 @@ button  {
 }
 
 .worth-text-img, a {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
+.service-triangle   {
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--main-bg-color);
+    border-left: 425px solid transparent;
+    border-bottom: 50px solid transparent;
+    outline: white;
 
-
+}
 
 /* --------------- 4.4 Services / tiles ------------------- */
 
@@ -298,8 +369,7 @@ button  {
     flex-basis: 425px;
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 100px 20px 0 20px;
-
+    margin: 0 20px 0 20px;
 }
 
 .inner-service-container    {
@@ -308,7 +378,22 @@ button  {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
+    opacity: 0.9;
+}
+
+.inner-service-container:after  {
+    margin-top: -50px;
+    /*for triangle to fit*/
+    margin-bottom: 20px;
+    content: "Services";
+    position: absolute;
+    color: #F7F6FF;
+    font-size: 95px;
+    font-weight: bolder;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto', sans-serif;
+    z-index: -2;
 }
 
 .tile-container {
@@ -320,9 +405,17 @@ button  {
     border: 1px solid var(--main-color-blue);
     margin: 20px 40px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    background-color: white;
 }
 
-.tile-container, h1, p {
+.tile-container h1 {
+    /*text-align: left;*/
+    color: var(--main-txt-color);
+    padding: 16px;
+}
+
+.tile-container p {
     text-align: left;
     color: var(--main-txt-color);
     padding: 16px;
@@ -330,7 +423,7 @@ button  {
 
 .image-wrapper-tiles-icons  {
     width: 100px;
-    padding-left: 16px;
+    padding: 16px;
 }
 
 .tile-container h1 {
@@ -346,6 +439,131 @@ button  {
 
 
 /* --------------- 4.5 Footer / contact from ------------------- */
+
+.form-triangle  {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 425px solid transparent;
+    border-bottom: 50px solid hsl(242, 75%, 54%);
+    /*outline: white;*/
+    margin-top: -30px;
+
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    flex-basis: 425px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+}
+
+.footer-content h1  {
+    text-align: center;
+    padding: 16px 0;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.footer-content p  {
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-content {
+    background-color: hsl(242, 75%, 59%);
+    /*background: rgb(9,80,121);*/
+    /*background: linear-gradient(90deg, rgba(9,80,121,1) 0%, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);*/
+}
+
+.footer-form    {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    width: 90%;
+
+}
+
+/*text form.........*/
+.label-form {
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.footer-form #customer-name{
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#customer-name, ::placeholder  {
+    padding: 16px 0 10px 10px;
+    /*font-weight: bold;*/
+    font-size: 9px;
+}
+
+.footer-form #customer-email    {
+    width: 95%;
+    margin-bottom: 20px;
+}
+
+#customer-email, ::placeholder  {
+    padding: 16px 0 10px 10px;
+    /*font-weight: bold;*/
+    font-size: 9px;
+}
+
+.footer-form #message-box   {
+    width: 95%;
+}
+
+#message-box, ::placeholder {
+    padding: 10px 0 10px 10px;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+#form-submit-button  {
+    background-color: #ef4183;
+    color: var(--main-bg-color);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding: 16px 0;
+    width: 200px;
+    border: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+.footer-form .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 16px;
+}
+
+.footer-footer-container    {
+    background-color: #0C0C0C;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.footer-footer-container p  {
+    padding-top: 16px;
+}
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
