@@ -369,7 +369,7 @@ p button a {
     flex-basis: 425px;
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 0 20px 20px 20px;
+    margin: 0 20px 0 20px;
 }
 
 .inner-service-container    {
@@ -383,15 +383,17 @@ p button a {
 }
 
 .inner-service-container:after  {
-    margin-top: -25px;
-    content: "SERVICES";
+    margin-top: -50px;
+    /*for triangle to fit*/
+    margin-bottom: 20px;
+    content: "Services";
     position: absolute;
-    color: black;
-    font-size: 100px;
+    color: #F7F6FF;
+    font-size: 95px;
     font-weight: bolder;
     /*font-family: 'Merriweather', serif;*/
     font-family: 'Roboto', sans-serif;
-    z-index: -1;
+    z-index: -2;
 }
 
 .tile-container {
@@ -403,6 +405,8 @@ p button a {
     border: 1px solid var(--main-color-blue);
     margin: 20px 40px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    background-color: white;
 }
 
 .tile-container h1 {
@@ -436,12 +440,23 @@ p button a {
 
 /* --------------- 4.5 Footer / contact from ------------------- */
 
+.form-triangle  {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 425px solid transparent;
+    border-bottom: 50px solid hsl(242, 75%, 54%);
+    /*outline: white;*/
+    margin-top: -30px;
+
+}
+
 .footer-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    flex-basis: 420px;
+    flex-basis: 425px;
     flex-grow: 0;
     flex-shrink: 1;
     margin: 0 20px;
@@ -450,7 +465,7 @@ p button a {
 .footer-content h1  {
     text-align: center;
     padding: 16px 0;
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 40px;
 }
 
