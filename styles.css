@@ -71,12 +71,6 @@ p button a {
 
 }
 
-/*.image-wrapper  {*/
-/*    flex-basis: 800px;*/
-/*    flex-grow: 0;*/
-/*    flex-shrink: 1;*/
-/*}*/
-
 
 /* --------------- 3.2 Other --------------------------- */
 
@@ -96,6 +90,8 @@ p button a {
 .header-content  {
     background-color: hsl(242, 75%, 59%);
     background-image: url(assets/noise-texture.png);
+
+    outline: white;
     /*background: rgb(9,80,121);*/
     /*background: linear-gradient(90deg, rgba(9,80,121,1) 0%, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);*/
 }
@@ -145,15 +141,13 @@ p button a {
     width: 0;
     height: 0;
     border-top: 50px solid transparent;
-    border-right: 524px solid transparent;
+    border-right: 425px solid transparent;
     border-bottom: 50px solid white;
-    /*margin-bottom: -50px;*/
-
-    /*background-image: url(assets/noise-texture.png);*/
+    outline: white;
 }
 
 #squiggle-line-item {
-    margin-bottom: -15%;
+    margin-bottom: -20%;
 }
 
 
@@ -195,7 +189,29 @@ p button a {
 
 }
 
+#triangle-right {
+    width: 0;
+    height: 0;
+    border-top: 50px solid transparent;
+    border-right: 425px solid transparent;
+    border-bottom: 50px solid var(--main-bg-color);
+    outline: white;
+}
+
 /* --------------- 4.3 Case Studies / projecten ------------------- */
+
+/*space for triangle element and WORK text after*/
+
+.space-for-triangle {
+    background-color: var(--main-bg-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    height: 70px;
+}
 
 .project-container  {
     display: flex;
@@ -216,6 +232,19 @@ p button a {
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
+    opacity: 0.9;
+}
+
+.inner-rolling-stone-container:after  {
+    margin-top: -25px;
+    content: "WORK";
+    position: absolute;
+    color: white;
+    font-size: 100px;
+    font-weight: bolder;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto', sans-serif;
+    z-index: -1;
 }
 
 /*img rolling stone*/
@@ -225,8 +254,6 @@ p button a {
     margin-top: 50px;
     margin-bottom: 16px;
 }
-
-
 
 .rolling-stone-text-img  {
     color: var(--main-txt-color);
@@ -320,11 +347,18 @@ p button a {
 }
 
 .worth-text-img, a {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
+.service-triangle   {
+    width: 0;
+    height: 0;
+    border-top: 50px solid var(--main-bg-color);
+    border-left: 425px solid transparent;
+    border-bottom: 50px solid transparent;
+    outline: white;
 
-
+}
 
 /* --------------- 4.4 Services / tiles ------------------- */
 
@@ -335,8 +369,7 @@ p button a {
     flex-basis: 425px;
     flex-grow: 0;
     flex-shrink: 1;
-    margin: 100px 20px 20px 20px;
-
+    margin: 0 20px 20px 20px;
 }
 
 .inner-service-container    {
@@ -346,6 +379,19 @@ p button a {
     justify-content: space-between;
     margin: 0;
     /*border: 1px dotted black;*/
+    opacity: 0.9;
+}
+
+.inner-service-container:after  {
+    margin-top: -25px;
+    content: "SERVICES";
+    position: absolute;
+    color: black;
+    font-size: 100px;
+    font-weight: bolder;
+    /*font-family: 'Merriweather', serif;*/
+    font-family: 'Roboto', sans-serif;
+    z-index: -1;
 }
 
 .tile-container {
@@ -503,14 +549,6 @@ p button a {
 .footer-footer-container p  {
     padding-top: 16px;
 }
-
-
-
-
-
-
-
-
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
