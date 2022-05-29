@@ -98,6 +98,12 @@ a   {
 .header-content  {
     background-color: hsl(242, 75%, 59%);
     background-image: url(assets/noise-texture.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
 
     outline: white;
     /*background: rgb(9,80,121);*/
@@ -586,52 +592,112 @@ a   {
 
     .inner-container {
         flex-basis: 1440px;
-        /*flex-grow: 0;*/
-        /*flex-shrink: 1;*/
-        /*margin: 0 20px;*/
-
-        /*display: flex;*/
-        /*flex-direction: column;*/
-        /*align-items: center;*/
-        /*!*border: 1px dotted blue;*!*/
-        /*text-align: center;*/
-
     }
 
     .nav-container  ul {
-        /*list-style-type: none;*/
-        /*display: flex;*/
-        /*flex-direction: row;*/
         justify-content: flex-end;
-        /*padding: 16px;*/
     }
 
     .nav-container ul a {
-        /*text-decoration: none;*/
-        /*color: var(--main-bg-color);*/
-        /*font-weight: bold;*/
-        /*font-size: 20px;*/
         padding: 16px;
         font-weight: lighter;
     }
 
-    .header-text    {
-        /*margin-bottom: 16px;*/
+    .header-text h1  {
+        text-align: center;
+        max-width: 500px;
+    }
+
+    .header-text p  {
         text-align: center;
         max-width: 500px;
     }
 
     #triangle-left {
-        /*width: 0;*/
-        /*height: 0;*/
-        /*border-top: 50px solid transparent;*/
         border-right: 1440px solid transparent;
-        /*border-bottom: 50px solid white;*/
-        /*outline: white;*/
     }
 
     #squiggle-line-item {
         margin-bottom: -6%;
+    }
+
+    /*    Intro for big screen*/
+
+    .intro-container    {
+        max-width: 600px;
+    }
+
+    .intro-container:after  {
+        margin-top: -80px;
+        font-size: 400px;
+    }
+
+    #triangle-right {
+        border-right: 1440px solid transparent;
+    }
+
+    /*projects for big screen*/
+
+    .space-for-triangle {
+        width: 1440px;
+    }
+
+    .project-container  {
+        flex-basis: 1440px;
+    }
+
+    /*Rolling stone.....*/
+    .inner-rolling-stone-container  {
+        /*background-color: var(--main-bg-color);*/
+        /*display: flex;*/
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 700px;
+        width: 1440px;
+    }
+
+    .inner-rolling-stone-container:after  {
+        margin-top: -400px;
+        margin-right: 100px;
+        /*content: "WORK";*/
+        /*position: absolute;*/
+        /*color: white;*/
+        font-size: 400px;
+        /*font-weight: bolder;*/
+        /*!*font-family: 'Merriweather', serif;*!*/
+        /*font-family: 'Roboto', sans-serif;*/
+        /*z-index: -1;*/
+    }
+
+    /*img rolling stone*/
+    #rolling-stone  {
+        width: 80%;
+        /*box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);*/
+        margin-top: 50px;
+        margin-bottom: 16px;
+    }
+
+    .rolling-stone-text-img  {
+        /*color: var(--main-txt-color);*/
+        /*text-align: left;*/
+        margin-left: 200px;
+    }
+
+    .rolling-stone-text-img p {
+        max-width: 300px;
+    }
+
+    /*spacing text and icon squiggle line*/
+
+    .rolling-stone-text-img h1, #rolling-stone-icon, p    {
+        margin-bottom: 30px;
+    }
+
+    .rolling-stone-text-img a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--main-color-blue);
     }
 
 }
