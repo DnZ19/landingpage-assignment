@@ -3,19 +3,23 @@
     margin: 0;
 }
 
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+/*///////////////////////    */
+
+/*Table of Contents*/
+/*    1. Global Styles*/
+/*    2. Typography*/
+/*    3. Layout*/
+/*        3.1 Reusables*/
+/*        3.2 Other*/
+/*    4. Areas*/
+/*        4.1 Header*/
+/*        4.2 Introduction*/
+/*        4.3 Case studies and projecs*/
+/*        4.4 Services*/
+/*        4.5 Footer / Form*/
+/*    5. Media Queries*/
+
+/*///////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
@@ -567,3 +571,19 @@ p button a {
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media  screen and (min-width: 500px)   {
+    .inner-container {
+        flex-basis: 1440px;
+        /*flex-grow: 0;*/
+        /*flex-shrink: 1;*/
+        /*margin: 0 20px;*/
+
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*align-items: center;*/
+        /*!*border: 1px dotted blue;*!*/
+        /*text-align: center;*/
+
+    }
+}
