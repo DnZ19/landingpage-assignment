@@ -648,39 +648,23 @@ a   {
 
     /*Rolling stone.....*/
     .inner-rolling-stone-container  {
-        /*background-color: var(--main-bg-color);*/
-        /*display: flex;*/
         flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        flex-basis: 700px;
+        flex-basis: 600px;
         width: 1440px;
     }
 
     .inner-rolling-stone-container:after  {
         margin-top: -400px;
         margin-right: 100px;
-        /*content: "WORK";*/
-        /*position: absolute;*/
-        /*color: white;*/
         font-size: 400px;
-        /*font-weight: bolder;*/
-        /*!*font-family: 'Merriweather', serif;*!*/
-        /*font-family: 'Roboto', sans-serif;*/
-        /*z-index: -1;*/
     }
 
     /*img rolling stone*/
     #rolling-stone  {
         width: 80%;
-        /*box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);*/
-        margin-top: 50px;
-        margin-bottom: 16px;
     }
 
     .rolling-stone-text-img  {
-        /*color: var(--main-txt-color);*/
-        /*text-align: left;*/
         margin-left: 200px;
     }
 
@@ -688,16 +672,52 @@ a   {
         max-width: 300px;
     }
 
-    /*spacing text and icon squiggle line*/
+    /*Variety......*/
 
-    .rolling-stone-text-img h1, #rolling-stone-icon, p    {
-        margin-bottom: 30px;
+    .inner-variety-container  {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 350px;
+        width: 1440px;
     }
 
-    .rolling-stone-text-img a {
-        text-decoration: none;
-        font-weight: bold;
-        color: var(--main-color-blue);
+    /*img variety */
+    #variety  {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .variety-text-img  {
+        margin-right: 100px;
+        max-width: 400px;
+    }
+
+    /*Worth.........*/
+
+    .inner-worth-container  {
+        flex-direction: row-reverse;
+        flex-basis: 350px;
+        width: 1440px;
+    }
+
+    /*img worth */
+    #worth  {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .worth-text-img  {
+        margin-left: 200px;
+    }
+
+    .worth-text-img p   {
+        max-width: 300px;
+    }
+
+    /*spacing text and icon squiggle line*/
+
+    .service-triangle   {
+        border-left: 1440px solid transparent;
     }
 
 }
