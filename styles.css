@@ -3,19 +3,23 @@
     margin: 0;
 }
 
-/*////////////////////////
-    Table of Contents
-    1. Global Styles
-    2. Typography
-    3. Layout
-        3.1 Reusables
-        3.2 Other
-    4. Areas
-        4.1 Header
-        4.2 Introduction
-        etc.
-    5. Media Queries
-////////////////////////*/
+/*///////////////////////    */
+
+/*Table of Contents*/
+/*    1. Global Styles*/
+/*    2. Typography*/
+/*    3. Layout*/
+/*        3.1 Reusables*/
+/*        3.2 Other*/
+/*    4. Areas*/
+/*        4.1 Header*/
+/*        4.2 Introduction*/
+/*        4.3 Case studies and projecs*/
+/*        4.4 Services*/
+/*        4.5 Footer / Form*/
+/*    5. Media Queries*/
+
+/*///////////////////////*/
 
 /* ------------------------------- 1. Global Styles -------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto&display=swap');
@@ -27,7 +31,15 @@ h1 h2 {
     font-family: 'Merriweather', serif;
 }
 
-p button a {
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+p   {
+    font-family: 'Roboto', sans-serif;
+}
+
+a   {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -40,7 +52,7 @@ p button a {
 :root {
     --main-bg-color: #F3F6F9; /*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
     --main-txt-color: #0C0C0C; /*Zwart #0C0C0C (voor standaard tekst);*/
-    --main-color-purple: #5722CD;
+    --main-color-purple: #13293D;
     --main-color-blue: #4845E4;
     --main-color-txt-accent: #F2F0FF; /*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
     --main-service-tile-txt: #7A7A7A;  /*Grijs #7A7A7A (voor de service-tegel tekst)*/
@@ -90,6 +102,12 @@ p button a {
 .header-content  {
     background-color: hsl(242, 75%, 59%);
     background-image: url(assets/noise-texture.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+
 
     outline: white;
     /*background: rgb(9,80,121);*/
@@ -124,17 +142,25 @@ p button a {
     margin-bottom: 16px;
 }
 
+.header-text p  {
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+}
+
 #intro-button  {
     background-color: #ef4183;
-    color: var(--main-bg-color);
-    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 30px;
     margin-top: 16px;
     margin-bottom: 100px;
     padding: 16px 30px;
     border: none;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #triangle-left {
@@ -186,7 +212,12 @@ p button a {
 .intro-container p  {
     color: var(--main-txt-color);
     margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.intro-container p a    {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 #triangle-right {
@@ -273,6 +304,39 @@ p button a {
     color: var(--main-color-blue);
 }
 
+/*Link line animation*/
+
+/*.rolling-stone-text-img a   {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.line-animation {*/
+/*    width: 20px;*/
+/*    border-bottom: 2px solid var(--main-color-blue);*/
+/*    margin-left: 10px;*/
+
+/*}*/
+
+.rolling-stone-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.rolling-stone-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
+}
+
+
+
+
+
 /*Variety......*/
 
 .inner-variety-container  {
@@ -307,6 +371,20 @@ p button a {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color-blue);
+}
+
+.variety-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.variety-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
 }
 
 /*Worth.........*/
@@ -358,6 +436,20 @@ p button a {
     border-bottom: 50px solid transparent;
     outline: white;
 
+}
+
+.worth-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.worth-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
 }
 
 /* --------------- 4.4 Services / tiles ------------------- */
@@ -531,7 +623,8 @@ p button a {
 #form-submit-button  {
     background-color: #ef4183;
     color: var(--main-bg-color);
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 16px;
     border-radius: 30px;
     margin-top: 20px;
@@ -540,6 +633,7 @@ p button a {
     width: 200px;
     border: none;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
 }
 
@@ -567,3 +661,206 @@ p button a {
 
 
 /* ------------------------------- 5. Media Queries -------------------------------- */
+
+@media  screen and (min-width: 500px)   {
+
+    /*header for big screen*/
+
+    .inner-container {
+        flex-basis: 1440px;
+    }
+
+    .nav-container  ul {
+        justify-content: flex-end;
+    }
+
+    .nav-container ul a {
+        padding: 16px;
+        font-weight: lighter;
+    }
+
+    .header-text h1  {
+        text-align: center;
+        max-width: 600px;
+        font-size: 40px;
+    }
+
+    .header-text p  {
+        text-align: center;
+        max-width: 600px;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+
+    #triangle-left {
+        border-right: 1440px solid transparent;
+    }
+
+    #squiggle-line-item {
+        margin-bottom: -6%;
+    }
+
+    /*    Intro for big screen*/
+
+    .intro-container    {
+        max-width: 600px;
+    }
+
+    .intro-container:after  {
+        margin-top: -80px;
+        font-size: 400px;
+    }
+
+    #triangle-right {
+        border-right: 1440px solid transparent;
+        padding-top: 50px;
+    }
+
+    /*projects for big screen*/
+
+    .space-for-triangle {
+        width: 1440px;
+    }
+
+    .project-container  {
+        flex-basis: 1440px;
+    }
+
+    /*Rolling stone.....*/
+    .inner-rolling-stone-container  {
+        flex-direction: row-reverse;
+        flex-basis: 600px;
+        width: 1440px;
+    }
+
+    .inner-rolling-stone-container:after  {
+        margin-top: -400px;
+        margin-right: 100px;
+        font-size: 400px;
+    }
+
+    /*img rolling stone*/
+    #rolling-stone  {
+        width: 80%;
+    }
+
+    .rolling-stone-text-img  {
+        margin-left: 200px;
+    }
+
+    .rolling-stone-text-img p {
+        max-width: 300px;
+    }
+
+    /*Variety......*/
+
+    .inner-variety-container  {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-basis: 350px;
+        width: 1440px;
+        padding-bottom: 40px;
+    }
+
+    /*img variety */
+    #variety  {
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    .variety-text-img  {
+        margin-right: 100px;
+        max-width: 400px;
+    }
+
+    .variety-text-img .line-animation:hover::after    {
+        width: 22%;
+        transition-duration: 0.35s;
+    }
+
+
+    /*Worth.........*/
+
+    .inner-worth-container  {
+        flex-direction: row-reverse;
+        flex-basis: 350px;
+        width: 1440px;
+        padding-bottom: 100px;
+    }
+
+    /*img worth */
+    #worth  {
+        width: 80%;
+        margin-top: 50px;
+    }
+
+    .worth-text-img  {
+        margin-left: 200px;
+    }
+
+    .worth-text-img p   {
+        max-width: 300px;
+    }
+
+    /*spacing text and icon squiggle line*/
+
+    .service-triangle   {
+        border-left: 1440px solid transparent;
+    }
+
+    .inner-service-container    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 1440px;
+        flex: 1 1 300px;
+        padding-top: 100px;
+    }
+
+    .tile-container {
+        max-width: 325px;
+    }
+
+    .inner-service-container:after  {
+        margin-top: -900px;
+        font-size: 300px;
+    }
+
+    .form-triangle  {
+        border-right: 1440px solid transparent;
+    }
+
+    .footer-content {
+        width: 1440px;
+        flex-basis: 800px;
+    }
+
+    .footer-content h1  {
+        font-size: 60px;
+    }
+
+    .footer-content p  {
+        /*text-align: center;*/
+        font-size: 30px;
+    }
+
+    .footer-form {
+        width: 60%;
+    }
+
+    /*!*text form.........*!*/
+
+    .label-form {
+        font-size: 30px;
+    }
+
+    #form-submit-button  {
+        font-size: 25px;
+    }
+
+    .footer-footer-container    {
+        width: 1440px;
+    }
+
+
+}
