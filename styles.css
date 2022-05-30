@@ -31,7 +31,11 @@ h1 h2 {
     font-family: 'Merriweather', serif;
 }
 
-p button a {
+button {
+    font-family: 'Roboto', sans-serif;
+}
+
+p   {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -48,7 +52,7 @@ a   {
 :root {
     --main-bg-color: #F3F6F9; /*Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
     --main-txt-color: #0C0C0C; /*Zwart #0C0C0C (voor standaard tekst);*/
-    --main-color-purple: #5722CD;
+    --main-color-purple: #13293D;
     --main-color-blue: #4845E4;
     --main-color-txt-accent: #F2F0FF; /*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
     --main-service-tile-txt: #7A7A7A;  /*Grijs #7A7A7A (voor de service-tegel tekst)*/
@@ -140,12 +144,15 @@ a   {
 
 .header-text p  {
     font-size: 20px;
+    font-weight: lighter;
+    color: white;
 }
 
 #intro-button  {
     background-color: #ef4183;
-    color: var(--main-bg-color);
-    font-weight: bold;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 16px;
     border-radius: 30px;
     margin-top: 16px;
@@ -153,6 +160,7 @@ a   {
     padding: 16px 30px;
     border: none;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #triangle-left {
@@ -204,7 +212,12 @@ a   {
 .intro-container p  {
     color: var(--main-txt-color);
     margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
 
+.intro-container p a    {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 #triangle-right {
@@ -291,6 +304,39 @@ a   {
     color: var(--main-color-blue);
 }
 
+/*Link line animation*/
+
+/*.rolling-stone-text-img a   {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    align-items: center;*/
+/*}*/
+
+/*.line-animation {*/
+/*    width: 20px;*/
+/*    border-bottom: 2px solid var(--main-color-blue);*/
+/*    margin-left: 10px;*/
+
+/*}*/
+
+.rolling-stone-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.rolling-stone-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
+}
+
+
+
+
+
 /*Variety......*/
 
 .inner-variety-container  {
@@ -325,6 +371,20 @@ a   {
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color-blue);
+}
+
+.variety-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.variety-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
 }
 
 /*Worth.........*/
@@ -376,6 +436,20 @@ a   {
     border-bottom: 50px solid transparent;
     outline: white;
 
+}
+
+.worth-text-img .line-animation::after  {
+    display: block;
+    content: "";
+    width: 9%;
+    height: 2px;
+    margin-top: 2px;
+    background-color: var(--main-color-blue);
+}
+
+.worth-text-img .line-animation:hover::after    {
+    width: 30%;
+    transition-duration: 0.35s;
 }
 
 /* --------------- 4.4 Services / tiles ------------------- */
@@ -549,7 +623,8 @@ a   {
 #form-submit-button  {
     background-color: #ef4183;
     color: var(--main-bg-color);
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
     font-size: 16px;
     border-radius: 30px;
     margin-top: 20px;
@@ -558,6 +633,7 @@ a   {
     width: 200px;
     border: none;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 
 }
 
@@ -637,6 +713,7 @@ a   {
 
     #triangle-right {
         border-right: 1440px solid transparent;
+        padding-top: 50px;
     }
 
     /*projects for big screen*/
@@ -695,6 +772,12 @@ a   {
         margin-right: 100px;
         max-width: 400px;
     }
+
+    .variety-text-img .line-animation:hover::after    {
+        width: 22%;
+        transition-duration: 0.35s;
+    }
+
 
     /*Worth.........*/
 
