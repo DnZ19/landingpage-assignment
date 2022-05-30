@@ -605,12 +605,15 @@ a   {
 
     .header-text h1  {
         text-align: center;
-        max-width: 500px;
+        max-width: 600px;
+        font-size: 40px;
     }
 
     .header-text p  {
         text-align: center;
-        max-width: 500px;
+        max-width: 600px;
+        font-size: 25px;
+        padding-left: 20px;
     }
 
     #triangle-left {
@@ -679,6 +682,7 @@ a   {
         justify-content: space-between;
         flex-basis: 350px;
         width: 1440px;
+        padding-bottom: 40px;
     }
 
     /*img variety */
@@ -698,6 +702,7 @@ a   {
         flex-direction: row-reverse;
         flex-basis: 350px;
         width: 1440px;
+        padding-bottom: 100px;
     }
 
     /*img worth */
@@ -719,5 +724,60 @@ a   {
     .service-triangle   {
         border-left: 1440px solid transparent;
     }
+
+    .inner-service-container    {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 1440px;
+        flex: 1 1 300px;
+        padding-top: 100px;
+    }
+
+    .tile-container {
+        max-width: 325px;
+    }
+
+    .inner-service-container:after  {
+        margin-top: -900px;
+        font-size: 300px;
+    }
+
+    .form-triangle  {
+        border-right: 1440px solid transparent;
+    }
+
+    .footer-content {
+        width: 1440px;
+        flex-basis: 800px;
+    }
+
+    .footer-content h1  {
+        font-size: 60px;
+    }
+
+    .footer-content p  {
+        /*text-align: center;*/
+        font-size: 30px;
+    }
+
+    .footer-form {
+        width: 60%;
+    }
+
+    /*!*text form.........*!*/
+
+    .label-form {
+        font-size: 30px;
+    }
+
+    #form-submit-button  {
+        font-size: 25px;
+    }
+
+    .footer-footer-container    {
+        width: 1440px;
+    }
+
 
 }
